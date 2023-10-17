@@ -54,18 +54,18 @@ def edit_data():
             file.write(new_data)
         
 def delete_data():
-    var = int(input(f'\nIn which file to change the data\n'
+    var = int(input(f'\nIn which file to delete the data\n'
                     f'1 or 2 file?\n\n'
                     f'Your choice: '))
     if var == 1:
         with open('data_first_variant.csv','r', encoding='utf-8') as file:
             data = file.read()
-            new_data = data.replace(input('What to change: '), '')
+            new_data = data.replace(input('What to delete: '), '')
         with open('data_first_variant.csv','w', encoding='utf-8') as file:    
             file.write(new_data)
     if var == 2:
         with open('data_second_variant.csv', 'r', encoding='utf-8') as file:
             data = file.read()
-            new_data = data.replace(input('What to change: '), '')
+            new_data = data.replace(input('What to delete: '), '')
         with open('data_second_variant.csv','w', encoding='utf-8') as file:    
             file.write(new_data)    
