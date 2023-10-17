@@ -1,4 +1,4 @@
-from logger import input_data, print_data
+from logger import input_data, print_data, edit_data, delete_data
 
 def interface():
     print('Hello! I am Chat Bot. \n'
